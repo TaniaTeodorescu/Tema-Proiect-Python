@@ -4,7 +4,7 @@ df=pd.read_csv('data.csv')
 
 X=10
 Y=18
-
+#Primul grafic in care se reprezinta Puls, MaxPuls si Calorii in functie de Durata
 plt.figure(figsize=(12, 8))
 plt.plot(df.index, df['Durata'], label='Durata', marker='*', color = '#4CAF50')    
 plt.plot(df.index, df['Puls'], label='Puls', marker='*', color = 'hotpink')
@@ -15,7 +15,7 @@ plt.xlabel('Durata')
 plt.ylabel('Puls, MaxPuls, Calorii')
 plt.legend()
 plt.show()
-
+#Al doilea grafic in care se reprezinta primele X=10 valori pt Puls, MaxPuls si Calorii in functie de durata
 plt.figure(figsize=(12, 8))
 plt.plot(df.index[:10], df['Durata'][:10], label='Durata', marker='*', color = '#4CAF50')
 plt.plot(df.index[:10], df['Puls'][:10], label='Puls', marker='*', color = 'hotpink')
@@ -26,7 +26,7 @@ plt.xlabel('Durata')
 plt.ylabel('Puls, MaxPuls, Calorii')
 plt.legend()
 plt.show()
-
+#Al treilea grafic in care se reprezinta ultimele Y=18 valori doar pt Puls si Durata
 plt.figure(figsize=(12, 8))
 plt.plot(df.index[-18:], df['Durata'].tail(18), label='Durata', marker='*', color = '#4CAF50')
 plt.plot(df.index[-18:], df['Puls'].tail(18), label='Puls', marker='*', color = 'hotpink')
