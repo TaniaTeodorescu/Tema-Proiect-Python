@@ -1,8 +1,6 @@
 # Tema-Proiect-Python
  x=10 si y=18
- pentru exercitiul 1:
- 
- pentru exercitiul 2:
+ pentru ex2_tema.py:
  am avut de instalat libraria Pandas pentru a putea lucra cu data sets si 
  libraria Matplotlib pentru a putea reprezenta vizual graficele
  Pentru instalare: in terminal/command prompt se tasteaza comenzile 'pip install pandas' si 'pip install matplotlib'
